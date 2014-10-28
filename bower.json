@@ -1,0 +1,7 @@
+{
+  "name": "highedweb-2014-presentation-about-customizing-the-output-from-a-google-search",
+  "version": "1.0.0",
+  "dependencies": {
+    "reveal.js": "~2.6.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "HighEdWeb 2014 presentation about customizing the output from a Google Search",
+    "packageVersion": "1.0.0",
+    "useSass": true,
+    "deployToGithubPages": false
+  }
+}

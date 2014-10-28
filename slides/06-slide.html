@@ -1,0 +1,77 @@
+<section>
+
+    <h2>Search API</h2>
+
+    <p>Bookmark the Reference documentation!</p>
+    <pre><a href="https://support.google.com/gsa/answer/3890846?hl=en&ref_topic=2709671">https://support.google.com/gsa/answer/3890846?hl=en&ref_topic=2709671</a></pre>
+    <p>More specifically, the Search Protocol Reference:</p>
+    <pre><a href="http://www.google.com/support/enterprise/static/gsa/docs/admin/72/gsa_doc_set/xml_reference/">http://www.google.com/support/enterprise/static/gsa/docs/admin/72/gsa_doc_set/xml_reference/</a></pre>
+</section>
+
+<section>
+    <h3>Required Search Parameters</h3>
+    <dl>
+        <dt><strong>site</strong></dt>
+        <dd>Limits search results to the contents of the specified collection.</dd>
+        <dd>
+            <pre>site=Chattanooga</pre>
+        </dd>
+        <dt><strong>client</strong></dt>
+        <dd>A string that indicates a valid front end and the policies defined for it, including KeyMatches, related
+            queries, filters, remove URLs, and OneBox Modules.
+        </dd>
+        <dd>
+            <pre>client=utk_frontend</pre>
+        </dd>
+        <dt><strong>output</strong></dt>
+        <dd>Selects the format of the search results.</dd>
+        <dd>
+            <pre>output=xml_no_dtd</pre>
+        </dd>
+        <dt><strong>q</strong></dt>
+        <dd>Search query as entered by the user.</dd>
+        <dd>
+            <pre>q=university%20web%20services</pre>
+        </dd>
+    </dl>
+</section>
+
+<section>
+    <h3>Preference Search Parameters</h3>
+    <dl>
+        <dt><strong>sort</strong></dt>
+        <dd>Results can be sorted by relevance, date or metadata.</dd>
+        <dd>
+            <pre>sort=date:D:L:d1</pre>
+        </dd>
+        <dt><strong>entqr</strong></dt>
+        <dd>This parameter sets the query expansion policy. 3 is Full: Uses both standard and local synonym files.</dd>
+        <dd>
+            <pre>entqr=3</pre>
+        </dd>
+        <dt><strong>ie</strong></dt>
+        <dd>Sets the character encoding that is used to interpret the query.</dd>
+        <dd>
+            <pre>ie=UTF-8</pre>
+        </dd>
+        <dt><strong>ud</strong></dt>
+        <dd>Specifies whether results include ud tags. A ud tag contains internationalized domain name (IDN) encoding
+            for a result URL.
+        </dd>
+        <dd>
+            <pre>ud=1</pre>
+        </dd>
+    </dl>
+</section>
+<section>
+    <h3>More Search Parameters</h3>
+    <dl>
+        <dt><strong>start</strong></dt>
+        <dd>Specifies the index number of the first entry in the result set that is to be returned. (Use with
+            <em>num</em>.)
+        </dd>
+        <dd>
+            <pre>start=0</pre>
+        </dd>
+    </dl>
+</section>
