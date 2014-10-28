@@ -1,0 +1,77 @@
+<section>
+    <h2>Making a Search Query</h2>
+
+<pre>
+    <code class="php">
+        if(isset($_POST['q']) && $_POST['q'] != '') {
+        $url = "http://google.tennessee.edu/search?"
+        . "client=utk_frontend&"
+        . "output=xml_no_dtd&"
+        . "sort=date:D:L:d1&"
+        . "entqr=3&"
+        . "ie=UTF-8&"
+        . "ud=1&"
+        . "site=Chattanooga&"
+        . "start=0&"
+        . "q=" . urlencode(stripslashes($_POST['q']));
+        $q = html_entity_decode(strip_tags($_POST['q']));
+        }
+    </code>
+</pre>
+<pre><a href="http://google.tennessee.edu/search?client=utk_frontend&output=xml_no_dtd&sort=date:D:L:d1&entqr=3&ie=UTF-8&ud=1&site=Chattanooga&start=0&q=university%20web%20services"
+        target="_blank">http://google.tennessee.edu/search?client=utk_frontend&output=xml_no_dtd&
+    sort=date:D:L:d1&entqr=3&ie=UTF-8&ud=1&site=Chattanooga&
+    start=0&q=university%20web%20services</a></pre>
+</section>
+
+<section>
+    <h2>Search Query - Response</h2>
+    <pre>
+        <code class="xml">
+            <GSP VER="3.2">
+                <TM>0.256643</TM>
+                <Q>university web services</Q>
+                <PARAM name="client" value="utk_frontend" original_value="utk_frontend"/>
+                <PARAM name="output" value="xml_no_dtd" original_value="xml_no_dtd"/>
+                <PARAM name="sort" value="date:D:L:d1" original_value="date:D:L:d1"/>
+                <PARAM name="entqr" value="3" original_value="3"/>
+                <PARAM name="ie" value="UTF-8" original_value="UTF-8"/>
+                <PARAM name="ud" value="1" original_value="1"/>
+                <PARAM name="site" value="Chattanooga" original_value="Chattanooga"/>
+                <PARAM name="start" value="0" original_value="0"/>
+                <PARAM name="q" value="university web services" original_value="university+web+services"/>
+                <PARAM name="ulang" value="en" original_value="en"/>
+                <PARAM name="ip" value="150.182.252.13" original_value="150.182.252.13"/>
+                <PARAM name="access" value="p" original_value="p"/>
+                <PARAM name="entqrm" value="0" original_value="0"/>
+                <PARAM name="entsp" value="a__urlpattern_policy" original_value="a__urlpattern_policy"/>
+                <PARAM name="wc" value="200" original_value="200"/>
+                <PARAM name="wc_mc" value="1" original_value="1"/>
+                <RES SN="1" EN="10">
+                    <M>1940</M>
+                    <FI/>
+                    <WXT/>
+                    <NB>
+                        <NU>/search?q=university+web+services&amp;site=Chattanooga&amp;lr=&amp;ie=UTF-8&amp;output=xml_no_dtd&amp;client=utk_frontend&amp;access=p&amp;sort=date:D:L:d1&amp;start=10&amp;sa=N</NU>
+                    </NB>
+                    <R N="1">
+                        <U>http://www.utc.edu/university-web-services/</U>
+                        <UE>http://www.utc.edu/university-web-services/</UE>
+                        <UD>http://www.utc.edu/university-web-services/</UD>
+                        <T>&lt;b>University Web Services&lt;/b></T>
+                        <RK>10</RK>
+                        <ENT_SOURCE>T4-ALRXDAUDJC2WK</ENT_SOURCE>
+                        <FS NAME="date" VALUE=""/>
+                        <S>&lt;b>...&lt;/b> &lt;b>University Web Services&lt;/b>. &lt;b>...&lt;/b> Remember, this list only goes to the &lt;b>University Web&lt;/b>&lt;br> &lt;b>Services&lt;/b> team, not all editors as it did previously. Managing Websites. &lt;b>...&lt;/b>  </S>
+                        <LANG>en</LANG>
+                        <HAS>
+                            <L/>
+                            <C SZ="24k" CID="-p9H4hzr_pQJ" ENC="UTF-8"/>
+                        </HAS>
+                    </R>
+                </RES>
+                <head/>
+            </GSP>
+        </code>
+    </pre>
+</section>
